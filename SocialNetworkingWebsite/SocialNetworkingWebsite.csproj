@@ -205,10 +205,21 @@
     <Compile Include="Migrations\201805221947239_InitalModel.Designer.cs">
       <DependentUpon>201805221947239_InitalModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805222053014_CreateTuneTable.cs" />
+    <Compile Include="Migrations\201805222053014_CreateTuneTable.Designer.cs">
+      <DependentUpon>201805222053014_CreateTuneTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805222111223_OverrideConventionsForTunesAndGenres.cs" />
+    <Compile Include="Migrations\201805222111223_OverrideConventionsForTunesAndGenres.Designer.cs">
+      <DependentUpon>201805222111223_OverrideConventionsForTunesAndGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Tune.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -291,6 +302,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201805221947239_InitalModel.resx">
       <DependentUpon>201805221947239_InitalModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805222053014_CreateTuneTable.resx">
+      <DependentUpon>201805222053014_CreateTuneTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805222111223_OverrideConventionsForTunesAndGenres.resx">
+      <DependentUpon>201805222111223_OverrideConventionsForTunesAndGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
