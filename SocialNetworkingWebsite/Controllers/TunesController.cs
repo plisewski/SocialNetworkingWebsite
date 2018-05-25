@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using SocialNetworkingWebsite.Models;
 using SocialNetworkingWebsite.ViewModels;
-using System;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -33,9 +32,8 @@ namespace SocialNetworkingWebsite.Controllers
         {
             var tune = new Tune
             {
-                ArtistId = User.Identity.GetUserId(),
-                //DateTime = DateTime.Parse(string.Format("{0} {1}", viewModel.Date, viewModel.Time)),
-                DateTime = DateTime.Parse(string.Format($"{viewModel.Date} {viewModel.Time}")),
+                ArtistId = User.Identity.GetUserId(),                
+                DateTime = viewModel.DateTime,
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };
