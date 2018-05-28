@@ -30,10 +30,16 @@ namespace SocialNetworkingWebsite.Controllers
         [HttpPost]
         public ActionResult Create(TuneFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                viewModel.Genres = _context.Genres.ToList();
+                return View("Create", viewModel);
+            }                
+
             var tune = new Tune
             {
                 ArtistId = User.Identity.GetUserId(),                
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };
