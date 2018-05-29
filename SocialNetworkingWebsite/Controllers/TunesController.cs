@@ -28,6 +28,7 @@ namespace SocialNetworkingWebsite.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(TuneFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
