@@ -22,3 +22,82 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Bootstrap overrides*/
+
+.navbar-inverse {
+    background-color: #66afe9;
+    border-color: #66afe9;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #3e92d4;
+}
+
+
+.dropdown-menu {
+    /*-webkit-box-shadow: none;*/
+    box-shadow: none;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+body {
+    font-size: 17px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: Lato, inherit, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    font-size: 17px;
+    padding: 20px 15px;
+    /*-ms-border-radius: 9px;*/
+    border-radius: 9px;
+}
+
+.form-control:focus {
+    border-color: #a94442;
+    /*-webkit-box-shadow: none;*/
+    box-shadow: none;
+}
+
+.btn {
+    font-size: 17px;
+    padding: 7px 20px;
+    /*-ms-border-radius: 9px;*/
+    border-radius: 9px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #66afe9;
+    border-color: #66afe9;
+}
